@@ -1,74 +1,55 @@
-# 🌾 Portafolio — Christian · BData
+# 🌾 BData Agro — Portafolio visual
 
-Galería visual de las aplicaciones que diseño y desarrollo para la **agroindustria chilena**.
-Cada panel resuelve un problema real de gestión: inventarios, rendiciones, costos, producción.
+**BData Agro** es la plataforma de gestión para la agroindustria que diseño y desarrollo en BData. Un solo lugar para todo el ciclo: **Planificar → Anticipar → Comprar → Ejecutar → Analizar**, con copiloto de IA (el "Sr. Campos").
 
-> 🔒 **Nota de confidencialidad:** todas las capturas usan datos de demostración o tienen los datos sensibles difuminados. No se muestra información real de clientes.
+> 🔒 **Confidencialidad:** todas las imágenes son del ambiente de demostración ("Agrícola Demo BData SpA") con datos ficticios. No se muestra información real de clientes.
 
----
-
-## 🌟 Agro BData
-
-Plataforma insignia de BData: gestión integral para empresas agroindustriales — ordena la operación y apoya la toma de decisiones.
-
-**Stack:** Next.js · TypeScript · Supabase
-
-<!-- 📷 AGREGA TUS CAPTURAS AQUÍ. Sube las imágenes a la carpeta /img y reemplaza esta línea por, por ejemplo:
-![Dashboard de Agro BData](img/agrobdata-dashboard.png)
-![Panel de producción](img/agrobdata-produccion.png)
--->
-
-_Capturas próximamente._
+**Stack:** Next.js · TypeScript · Python · Supabase · PostgreSQL
 
 ---
 
-## 📦 Inventarios
+## 🧠 Inteligencia (IA)
 
-Aplicación web para control de inventarios y activos. Stock, movimientos, trazabilidad y activos serializados por unidad.
+Un copiloto que lee los datos del cliente y dice **qué hacer**: caja, compras, mercado y contratos en un solo lugar.
 
-**Stack:** Next.js · TypeScript · Supabase
-
-<!-- 📷 AGREGA TUS CAPTURAS AQUÍ.
-![Listado de inventario](img/inventarios-listado.png)
-![Movimientos de stock](img/inventarios-movimientos.png)
--->
-
-_Capturas próximamente._
+![Centro de IA — análisis accionables](img/centro-de-ia.png)
+![Auditoría de compras con IA](img/auditoria-compras.png)
+![Diagnóstico agronómico por foto](img/diagnostico-ia.png)
 
 ---
 
-## 🧾 Rendiciones
+## 💰 Finanzas y caja
 
-Sistema de rendición de gastos para equipos en terreno. Carga, aprobación y reportería.
+Flujo de caja proyectado semana a semana y economía del plan agronómico por cultivo y hectárea.
 
-**Stack:** Next.js · TypeScript · Supabase
-
-<!-- 📷 AGREGA TUS CAPTURAS AQUÍ.
-![Formulario de rendición](img/rendiciones-form.png)
-![Reporte de gastos](img/rendiciones-reporte.png)
--->
-
-_Capturas próximamente._
+![Flujo de caja proyectado](img/flujo-de-caja.png)
+![Economía del plan agronómico](img/economia-plan.png)
 
 ---
 
-## 🧪 Fertilizantes
+## 🌱 Operación agronómica
 
-Optimizador de aplicación de fertilizantes para cultivos.
+Del plan a terreno: optimizador de fertilización, compras inteligentes por urgencia, ejecución e inventario.
 
-**Stack:** Python
+![Optimizador de fertilización](img/optimizador-fertilizacion.png)
+![Compras inteligentes por urgencia](img/compras-inteligentes.png)
+![Aplicaciones realizadas en terreno](img/aplicaciones-realizadas.png)
+![Inventario](img/inventario.png)
 
-<!-- 📷 AGREGA TUS CAPTURAS AQUÍ.
-![Optimizador de fertilización](img/fertilizantes-optimizador.png)
--->
+---
 
-_Capturas próximamente._
+## 📈 Mercado y contratos
+
+Termómetro de mercado (precios de insumos y cultivos) y calendario de cobros de contratos comerciales.
+
+![Termómetro de mercado](img/termometro-mercado.png)
+![Contratos comerciales](img/contratos.png)
 
 ---
 
 ## 👤 Sobre mí
 
-**Christian** — Fundador de **BData**, consultoría especializada en herramientas de gestión para la agroindustria chilena.
+**Christian** — Fundador de **BData**, consultoría y software de gestión para la agroindustria chilena.
 
 - 🌐 [bdata.cl](https://bdata.cl)
 - ✉️ christian@bdata.cl
