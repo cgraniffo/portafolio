@@ -37,4 +37,3 @@ Una lista de espera convierte mucho más que una venta. Como referencia aproxima
 ## Principios (no negociables)
 - Sin testimonios inventados ni contadores de urgencia falsos.
 - No se promete resolver agresividad: eso se deriva a un profesional.
-- La garantía de 30 días se cumple sin trabas.
