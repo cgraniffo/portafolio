@@ -15,10 +15,8 @@
 |---|---|---|
 | A | Culpa liberada | "Si tu paseo es una pelea, no es culpa de tu perro. Tirar le funciona, y cada paseo lo está entrenando. 10 minutos al día durante 21 días para cambiarlo." |
 | B | Dolor físico | "¿Brazo adolorido después de cada paseo? Tu perro puede aprender a caminar a tu lado, sin collares de castigo." |
-| C | Curiosidad | "El error que comete el 90 % de las personas cuando su perro tira de la correa (y qué hacer en su lugar)." |
+| C | Curiosidad | "El error que comete la mayoría de las personas cuando su perro tira de la correa (y qué hacer en su lugar)." |
 | D | Deseo | "Imagina pasear con la correa suelta, sin tirones y sin vergüenza. Plan de 21 días, 10 minutos al día." |
-
-> Nota sobre la C: el "90 %" es un recurso retórico. Si no tenemos un dato que lo respalde, cambiarlo por "la mayoría".
 
 ## 3. Cómo decidir (día 7)
 
