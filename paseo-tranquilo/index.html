@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paseo Tranquilo · Plan de 21 días para que tu perro deje de tirar la correa</title>
+  <meta name="description" content="Un plan de 10 minutos al día, con refuerzo positivo, para que tu perro camine a tu lado sin tirones. Únete a la lista de lanzamiento.">
+  <meta property="og:title" content="Paseo Tranquilo · Plan de 21 días">
+  <meta property="og:description" content="Si tu paseo es una pelea, no es culpa de tu perro. 10 minutos al día, 21 días.">
+
+  <!-- META PIXEL: pega aquí el código base de tu píxel de Meta (Administrador de eventos > Configurar píxel). -->
+
+  <style>
+    :root{
+      --ink:#1f2a37; --muted:#5b6675; --bg:#fffaf3; --card:#ffffff;
+      --brand:#e2703a; --brand-dark:#c35a28; --green:#2f8f6a; --line:#efe4d6;
+      --radius:18px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:18px}
+    .wrap{max-width:960px;margin:0 auto;padding:0 22px}
+    section{padding:64px 0}
+    h1{font-size:clamp(2rem,5vw,3.1rem);line-height:1.12;letter-spacing:-.02em}
+    h2{font-size:clamp(1.6rem,3.6vw,2.2rem);line-height:1.2;margin-bottom:18px;letter-spacing:-.01em}
+    h3{font-size:1.15rem;margin-bottom:6px}
+    p{color:var(--muted)}
+    .eyebrow{display:inline-block;font-size:.85rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brand-dark);background:#fde7da;padding:6px 12px;border-radius:999px;margin-bottom:18px}
+    .btn{display:inline-block;background:var(--brand);color:#fff;font-weight:700;font-size:1.08rem;padding:16px 28px;border-radius:999px;text-decoration:none;border:0;cursor:pointer;box-shadow:0 8px 20px rgba(226,112,58,.28);transition:transform .15s,background .15s}
+    .btn:hover{background:var(--brand-dark);transform:translateY(-1px)}
+    .small{font-size:.9rem;color:var(--muted)}
+
+    /* Hero */
+    .hero{padding:56px 0 40px}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+    .hero p.lead{font-size:1.2rem;margin:18px 0 28px}
+    .hero-art{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:22px;box-shadow:0 20px 40px rgba(31,42,55,.06)}
+    @media (max-width:820px){.hero-grid{grid-template-columns:1fr}.hero{padding-top:32px}.hero-art{max-width:340px;margin:0 auto;padding:12px}}
+
+    /* Pain */
+    .pain{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .checks{list-style:none;display:grid;gap:12px;margin:22px 0}
+    .checks li{padding-left:34px;position:relative;color:var(--ink)}
+    .checks li::before{content:"";position:absolute;left:0;top:5px;width:20px;height:20px;border-radius:6px;background:#fde7da;border:2px solid var(--brand)}
+    .callout{background:#fff4ec;border-left:5px solid var(--brand);padding:18px 22px;border-radius:12px;margin-top:22px;color:var(--ink)}
+
+    /* Phases */
+    .phases{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
+    .phase{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+    .phase .tag{font-weight:800;color:var(--green);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase}
+    @media (max-width:820px){.phases{grid-template-columns:1fr}}
+
+    /* Includes */
+    .includes{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:24px}
+    .inc{display:flex;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+    .inc .ico{flex:0 0 44px;height:44px;border-radius:12px;background:#e6f4ee;display:grid;place-items:center;font-size:1.3rem}
+    @media (max-width:720px){.includes{grid-template-columns:1fr}}
+
+    /* For whom */
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+    .box{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+    .box ul{padding-left:20px;color:var(--ink)} .box li{margin:8px 0}
+    .box.no{background:#fbfbfb}
+    @media (max-width:720px){.two{grid-template-columns:1fr}}
+
+    /* Offer + form */
+    .offer{background:linear-gradient(180deg,#fff4ec, var(--bg))}
+    .offer-card{background:var(--card);border:2px solid var(--brand);border-radius:26px;padding:34px;max-width:620px;margin:0 auto;box-shadow:0 24px 50px rgba(226,112,58,.12)}
+    .price{display:flex;align-items:baseline;gap:12px;margin:10px 0 4px}
+    .price .now{font-size:2.6rem;font-weight:800;color:var(--ink)}
+    .price .later{color:var(--muted)}
+    form{display:grid;gap:14px;margin-top:22px}
+    label{font-weight:600;font-size:.95rem;display:grid;gap:6px;color:var(--ink)}
+    input,select{font:inherit;padding:13px 14px;border:1.5px solid var(--line);border-radius:12px;background:#fff;color:var(--ink)}
+    input:focus,select:focus{outline:none;border-color:var(--brand)}
+    .hidden{display:none}
+    .guarantee{display:flex;gap:14px;align-items:flex-start;margin-top:22px;padding-top:20px;border-top:1px dashed var(--line)}
+
+    /* FAQ */
+    details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:12px}
+    summary{font-weight:700;cursor:pointer;color:var(--ink)}
+    details p{margin-top:10px}
+
+    footer{padding:36px 0 48px;text-align:center;font-size:.85rem;color:var(--muted)}
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Lanzamiento próximo · Lista de espera</span>
+        <h1>Si tu paseo es una pelea, no es culpa de tu perro.</h1>
+        <p class="lead"><strong>Paseo Tranquilo</strong> es un plan de <strong>21 días</strong>, con <strong>10 minutos al día</strong>, para que tu perro aprenda a caminar a tu lado sin tirar la correa. Sin collares de castigo y sin gritos: solo refuerzo positivo.</p>
+        <a href="#unirme" class="btn">Quiero el precio de lanzamiento</a>
+        <p class="small" style="margin-top:12px">Únete gratis a la lista. Te avisamos el día del lanzamiento.</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <!-- Ilustración simple: persona y perro paseando con la correa suelta -->
+        <svg viewBox="0 0 360 260" width="100%" role="img">
+          <rect x="0" y="0" width="360" height="260" rx="20" fill="#fff4ec"/>
+          <circle cx="300" cy="52" r="26" fill="#fde7da"/>
+          <path d="M0 210 Q90 190 180 205 T360 200 V260 H0Z" fill="#e6f4ee"/>
+          <!-- persona -->
+          <circle cx="110" cy="70" r="16" fill="#1f2a37"/>
+          <rect x="98" y="88" width="24" height="62" rx="12" fill="#e2703a"/>
+          <rect x="100" y="146" width="9" height="52" rx="4" fill="#1f2a37"/>
+          <rect x="112" y="146" width="9" height="52" rx="4" fill="#1f2a37"/>
+          <rect x="118" y="100" width="34" height="8" rx="4" fill="#e2703a" transform="rotate(25 118 100)"/>
+          <!-- correa suelta (curva en J) -->
+          <path d="M148 118 Q175 175 205 150" fill="none" stroke="#1f2a37" stroke-width="3" stroke-linecap="round"/>
+          <!-- perro -->
+          <ellipse cx="238" cy="168" rx="40" ry="20" fill="#c9863f"/>
+          <circle cx="205" cy="148" r="17" fill="#c9863f"/>
+          <ellipse cx="196" cy="138" rx="6" ry="11" fill="#8a5a2b" transform="rotate(-20 196 138)"/>
+          <circle cx="200" cy="148" r="2.5" fill="#1f2a37"/>
+          <circle cx="190" cy="153" r="3" fill="#1f2a37"/>
+          <rect x="212" y="180" width="8" height="24" rx="4" fill="#c9863f"/>
+          <rect x="252" y="180" width="8" height="24" rx="4" fill="#c9863f"/>
+          <path d="M276 160 Q296 140 292 128" fill="none" stroke="#c9863f" stroke-width="7" stroke-linecap="round"/>
+          <text x="180" y="244" text-anchor="middle" font-family="system-ui" font-size="14" font-weight="700" fill="#2f8f6a">Correa suelta = paseo feliz</text>
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <!-- PROBLEMA -->
+  <section class="pain">
+    <div class="wrap">
+      <h2>¿Te suena alguna de estas?</h2>
+      <ul class="checks">
+        <li>Sales a pasear y terminas con el brazo adolorido.</li>
+        <li>Tu perro se lanza hacia cada perro, gato u olor que ve.</li>
+        <li>Ya probaste a tirar de vuelta y a decirle "¡no!", y sigue igual o peor.</li>
+        <li>Te da vergüenza o miedo pasear por lugares con gente.</li>
+        <li>Paseas menos de lo que te gustaría porque es agotador.</li>
+      </ul>
+      <div class="callout">
+        <strong>Lo que casi nadie explica:</strong> si tu perro tira y avanza, aprende que <em>tirar funciona</em>. Cada paseo lo está entrenando, aunque no te des cuenta. Para cambiarlo no hace falta más fuerza: hace falta cambiar lo que le funciona.
+      </div>
+    </div>
+  </section>
+
+  <!-- MÉTODO -->
+  <section>
+    <div class="wrap">
+      <h2>Cómo funciona: tres fases en 21 días</h2>
+      <p>Sesiones cortas de 10 minutos que caben en tu día. Cada día tiene un solo objetivo claro.</p>
+      <div class="phases">
+        <div class="phase">
+          <div class="tag">Días 1–7</div>
+          <h3>Atención</h3>
+          <p>Tu perro aprende que mirarte y quedarse cerca de ti trae cosas buenas. Primero en casa, después en el patio o la vereda.</p>
+        </div>
+        <div class="phase">
+          <div class="tag">Días 8–14</div>
+          <h3>Correa suelta</h3>
+          <p>Aprende que la correa tensa detiene el paseo y la correa suelta lo hace avanzar. Así deja de tirar porque tirar ya no le sirve.</p>
+        </div>
+        <div class="phase">
+          <div class="tag">Días 15–21</div>
+          <h3>El mundo real</h3>
+          <p>Practica con distracciones: otros perros, ruidos, personas. Sumas dificultad de a poco, sin ponerlo en situaciones que no pueda manejar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUÉ INCLUYE -->
+  <section style="padding-top:0">
+    <div class="wrap">
+      <h2>Qué incluye</h2>
+      <div class="includes">
+        <div class="inc"><div class="ico">📘</div><div><h3>Guía paso a paso (PDF)</h3><p>Los 21 días explicados en lenguaje simple, con qué hacer, qué evitar y qué hacer si algo no funciona.</p></div></div>
+        <div class="inc"><div class="ico">🎬</div><div><h3>Videos cortos de cada ejercicio</h3><p>Para ver cómo se hace cada ejercicio antes de practicarlo con tu perro.</p></div></div>
+        <div class="inc"><div class="ico">✅</div><div><h3>Calendario imprimible</h3><p>Para marcar cada sesión y ver el avance. Se puede pegar en el refrigerador.</p></div></div>
+        <div class="inc"><div class="ico">🧭</div><div><h3>Guía de equipo</h3><p>Qué arnés y qué correa usar, y por qué los collares de ahorque o de púas empeoran el problema.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARA QUIÉN -->
+  <section style="padding-top:0">
+    <div class="wrap">
+      <h2>¿Es para ti?</h2>
+      <div class="two">
+        <div class="box">
+          <h3>✔ Sí, si…</h3>
+          <ul>
+            <li>Tu perro tira de la correa, se adelanta o zigzaguea.</li>
+            <li>Puedes dedicar 10 minutos al día durante 3 semanas.</li>
+            <li>Prefieres un método amable, sin castigo.</li>
+            <li>Tienes un cachorro o un perro adulto de cualquier tamaño.</li>
+          </ul>
+        </div>
+        <div class="box no">
+          <h3>✖ No es para ti si…</h3>
+          <ul>
+            <li>Tu perro ha mordido o muestra agresividad seria. En ese caso, busca a un etólogo o educador canino presencial.</li>
+            <li>Buscas un truco mágico que resuelva todo en un día.</li>
+            <li>Tu perro tiene dolor o algún problema de salud: primero, el veterinario.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFERTA + FORMULARIO -->
+  <section class="offer" id="unirme">
+    <div class="wrap">
+      <div class="offer-card">
+        <span class="eyebrow">Precio de lanzamiento solo para la lista</span>
+        <h2 style="margin-bottom:4px">Únete a la lista de espera</h2>
+        <div class="price"><span class="now">USD 9</span><span class="later">precio posterior: USD 17</span></div>
+        <p>Pago único. Acceso para siempre. Unirte a la lista es gratis y no te compromete a comprar.</p>
+
+        <form name="lista-espera" method="POST" action="/gracias.html" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="lista-espera">
+          <p class="hidden"><label>No llenar: <input name="bot-field"></label></p>
+
+          <label>Tu correo
+            <input type="email" name="email" required placeholder="tunombre@correo.com" autocomplete="email">
+          </label>
+
+          <label>¿Cuál es el mayor problema de tu perro?
+            <select name="problema" required>
+              <option value="">Elige una opción</option>
+              <option>Tira de la correa</option>
+              <option>Ladra o se lanza hacia otros perros</option>
+              <option>Muerde todo (cachorro)</option>
+              <option>Llora o destroza cuando queda solo</option>
+              <option>Hace pipí o caca dentro de casa</option>
+              <option>Otro</option>
+            </select>
+          </label>
+
+          <label>País
+            <select name="pais" required>
+              <option value="">Elige tu país</option>
+              <option>Chile</option><option>México</option><option>Colombia</option><option>Argentina</option>
+              <option>Perú</option><option>España</option><option>Ecuador</option><option>Uruguay</option>
+              <option>Estados Unidos</option><option>Otro</option>
+            </select>
+          </label>
+
+          <button type="submit" class="btn" style="width:100%">Quiero el precio de lanzamiento</button>
+          <p class="small" style="text-align:center">Sin spam. Solo te escribimos sobre Paseo Tranquilo y puedes darte de baja cuando quieras.</p>
+        </form>
+
+        <div class="guarantee">
+          <div style="font-size:1.8rem">🛡️</div>
+          <div><strong>Garantía de 30 días.</strong> <span class="small">Si haces el plan y no ves mejora, te devolvemos el 100 % de tu dinero. Sin preguntas.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="wrap" style="max-width:760px">
+      <h2>Preguntas frecuentes</h2>
+      <details><summary>¿Sirve para perros adultos o solo para cachorros?</summary><p>Sirve para ambos. Los perros adultos pueden tardar un poco más, porque llevan más tiempo practicando el hábito de tirar, pero aprenden igual.</p></details>
+      <details><summary>¿Y si mi perro es grande y muy fuerte?</summary><p>El método no depende de tu fuerza. Incluye una guía de equipo con arneses que dan más control sin hacerle daño.</p></details>
+      <details><summary>¿Necesito premios o comida?</summary><p>Ayudan mucho, sobre todo al principio. La guía explica cómo usarlos y cómo dejarlos de a poco.</p></details>
+      <details><summary>¿Cuándo sale y cómo lo recibo?</summary><p>Avisaremos por correo a la lista el día del lanzamiento. Después de pagar, recibes el acceso de inmediato en tu correo.</p></details>
+      <details><summary>¿Esto reemplaza a un educador canino?</summary><p>Para tirar de la correa, la mayoría de las personas lo resuelve por su cuenta con práctica constante. Si hay agresividad, miedo extremo o mordidas, recomendamos un profesional presencial.</p></details>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <a href="#unirme" class="btn" style="margin-bottom:22px">Unirme a la lista</a>
+      <p>© Paseo Tranquilo. Información educativa: no reemplaza la atención veterinaria ni la de un profesional del comportamiento.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
