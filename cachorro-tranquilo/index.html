@@ -8,6 +8,25 @@
   <meta property="og:title" content="Cachorro Tranquilo · Plan de 4 semanas">
   <meta property="og:description" content="Pipí en su lugar, menos mordidas y noches tranquilas. 10 a 15 minutos al día, 4 semanas.">
 
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1478717147524424');
+  fbq('track', 'PageView');
+  fbq('track', 'ViewContent', {content_name: 'Cachorro Tranquilo', value: 9, currency: 'USD'});
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1478717147524424&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
   <style>
     :root{
       --ink:#1f2a37; --muted:#5b6675; --bg:#fffaf3; --card:#ffffff;
@@ -240,5 +259,11 @@
     </div>
   </footer>
 
+  <script>
+    // Meta Pixel: marca el inicio de compra cuando alguien va al checkout de Hotmart
+    document.querySelectorAll('a.buy').forEach(function (a) {
+      a.addEventListener('click', function () { if (window.fbq) fbq('track', 'InitiateCheckout', {content_name: 'Cachorro Tranquilo', value: 9, currency: 'USD'}); });
+    });
+  </script>
 </body>
 </html>
