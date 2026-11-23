@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Publica en Netlify SOLO los .html de una carpeta (nunca .md, carpetas de producto ni config local).
+# Publica en Netlify SOLO los .html e imágenes de una carpeta (nunca .md, carpetas de producto ni config local).
 # Uso: scripts/deploy.sh <carpeta> <site_id> [--prod]
 #   ej: scripts/deploy.sh paseo-tranquilo bb71a383-978f-401b-9fc3-2be57aa5ea45 --prod
 # Sin --prod crea un deploy de vista previa (URL de borrador) para revisar antes.
@@ -9,5 +9,6 @@ root="$(cd "$(dirname "$0")/.." && pwd)"
 out="$(mktemp -d)"
 trap 'rm -rf "$out"' EXIT
 cp "$root/$src"/*.html "$out"/
+for f in "$root/$src"/*.{jpg,jpeg,png,webp,svg}; do if [ -e "$f" ]; then cp "$f" "$out"/; fi; done
 echo "Archivos a publicar:"; ls -1 "$out"
 netlify deploy --dir "$out" --site "$site" ${prod:+--prod}
