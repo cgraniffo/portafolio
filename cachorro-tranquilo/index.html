@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cachorro Tranquilo · Plan de 4 semanas para tu cachorro</title>
+  <meta name="description" content="Un plan de 4 semanas, con 10 a 15 minutos al día y refuerzo positivo, para que tu cachorro haga pipí en su lugar, muerda menos y duerma tranquilo. Guía PDF, 8 videos animados y calendario. USD 9.">
+  <meta property="og:title" content="Cachorro Tranquilo · Plan de 4 semanas">
+  <meta property="og:description" content="Pipí en su lugar, menos mordidas y noches tranquilas. 10 a 15 minutos al día, 4 semanas.">
+
+  <style>
+    :root{
+      --ink:#1f2a37; --muted:#5b6675; --bg:#fffaf3; --card:#ffffff;
+      --brand:#e2703a; --brand-dark:#c35a28; --green:#2f8f6a; --line:#efe4d6;
+      --radius:18px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:18px}
+    .wrap{max-width:960px;margin:0 auto;padding:0 22px}
+    section{padding:64px 0}
+    h1{font-size:clamp(2rem,5vw,3.1rem);line-height:1.12;letter-spacing:-.02em}
+    h2{font-size:clamp(1.6rem,3.6vw,2.2rem);line-height:1.2;margin-bottom:18px;letter-spacing:-.01em}
+    h3{font-size:1.15rem;margin-bottom:6px}
+    p{color:var(--muted)}
+    .eyebrow{display:inline-block;font-size:.85rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brand-dark);background:#fde7da;padding:6px 12px;border-radius:999px;margin-bottom:18px}
+    .btn{display:inline-block;background:var(--brand);color:#fff;font-weight:700;font-size:1.08rem;padding:16px 28px;border-radius:999px;text-decoration:none;border:0;cursor:pointer;box-shadow:0 8px 20px rgba(226,112,58,.28);transition:transform .15s,background .15s}
+    .btn:hover{background:var(--brand-dark);transform:translateY(-1px)}
+    .small{font-size:.9rem;color:var(--muted)}
+
+    /* Hero */
+    .hero{padding:56px 0 40px}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+    .hero p.lead{font-size:1.2rem;margin:18px 0 28px}
+    .hero-art{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:22px;box-shadow:0 20px 40px rgba(31,42,55,.06)}
+    @media (max-width:820px){.hero-grid{grid-template-columns:1fr}.hero{padding-top:32px}.hero-art{max-width:340px;margin:0 auto;padding:12px}}
+
+    /* Pain */
+    .pain{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .checks{list-style:none;display:grid;gap:12px;margin:22px 0}
+    .checks li{padding-left:34px;position:relative;color:var(--ink)}
+    .checks li::before{content:"";position:absolute;left:0;top:5px;width:20px;height:20px;border-radius:6px;background:#fde7da;border:2px solid var(--brand)}
+    .callout{background:#fff4ec;border-left:5px solid var(--brand);padding:18px 22px;border-radius:12px;margin-top:22px;color:var(--ink)}
+
+    /* Phases */
+    .phases{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
+    .phase{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+    .phase .tag{font-weight:800;color:var(--green);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase}
+    .phases.four{grid-template-columns:repeat(2,1fr)}
+    @media (max-width:820px){.phases,.phases.four{grid-template-columns:1fr}}
+
+    /* Includes */
+    .includes{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:24px}
+    .inc{display:flex;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+    .inc .ico{flex:0 0 44px;height:44px;border-radius:12px;background:#e6f4ee;display:grid;place-items:center;font-size:1.3rem}
+    @media (max-width:720px){.includes{grid-template-columns:1fr}}
+
+    /* For whom */
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+    .box{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+    .box ul{padding-left:20px;color:var(--ink)} .box li{margin:8px 0}
+    .box.no{background:#fbfbfb}
+    @media (max-width:720px){.two{grid-template-columns:1fr}}
+
+    /* Offer + form */
+    .offer{background:linear-gradient(180deg,#fff4ec, var(--bg))}
+    .offer-card{background:var(--card);border:2px solid var(--brand);border-radius:26px;padding:34px;max-width:620px;margin:0 auto;box-shadow:0 24px 50px rgba(226,112,58,.12)}
+    .price{display:flex;align-items:baseline;gap:12px;margin:10px 0 4px}
+    .price .now{font-size:2.6rem;font-weight:800;color:var(--ink)}
+    .price .later{color:var(--muted)}
+    form{display:grid;gap:14px;margin-top:22px}
+    label{font-weight:600;font-size:.95rem;display:grid;gap:6px;color:var(--ink)}
+    input,select{font:inherit;padding:13px 14px;border:1.5px solid var(--line);border-radius:12px;background:#fff;color:var(--ink)}
+    input:focus,select:focus{outline:none;border-color:var(--brand)}
+    .hidden{display:none}
+    .guarantee{display:flex;gap:14px;align-items:flex-start;margin-top:22px;padding-top:20px;border-top:1px dashed var(--line)}
+
+    /* FAQ */
+    details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:12px}
+    summary{font-weight:700;cursor:pointer;color:var(--ink)}
+    details p{margin-top:10px}
+
+    footer{padding:36px 0 48px;text-align:center;font-size:.85rem;color:var(--muted)}
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Precio de lanzamiento</span>
+        <h1>Tu cachorro no se porta mal: todavía nadie le enseñó.</h1>
+        <p class="lead"><strong>Cachorro Tranquilo</strong> es un plan de <strong>4 semanas</strong>, con <strong>10 a 15 minutos al día</strong>, para que tu cachorro haga pipí en su lugar, muerda menos y duerma tranquilo. Sin retos ni castigos: rutinas y refuerzo positivo.</p>
+        <a href="https://pay.hotmart.com/R108618938V" class="btn buy">Empezar hoy por USD 9</a>
+        <p class="small" style="margin-top:12px">Pago único y seguro con Hotmart. Recibes el acceso en tu correo apenas pagas.</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <!-- Ilustración: cachorro durmiendo en su jaula con la puerta abierta -->
+        <svg viewBox="0 0 360 260" width="100%" role="img">
+          <rect x="0" y="0" width="360" height="260" rx="20" fill="#fff4ec"/>
+          <circle cx="300" cy="52" r="22" fill="#fde7da"/>
+          <rect x="0" y="200" width="360" height="60" fill="#f3e6d6"/>
+          <rect x="70" y="92" width="170" height="112" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="5"/>
+          <rect x="84" y="186" width="142" height="14" rx="7" fill="#cfe5da"/>
+          <ellipse cx="160" cy="176" rx="40" ry="17" fill="#c9863f"/>
+          <circle cx="126" cy="170" r="15" fill="#c9863f"/>
+          <ellipse cx="120" cy="162" rx="6" ry="10" fill="#8a5a2b" transform="rotate(-30 120 162)"/>
+          <path d="M118 171 q4 3 8 0" fill="none" stroke="#1f2a37" stroke-width="2" stroke-linecap="round"/>
+          <path d="M198 178 Q212 170 206 160" fill="none" stroke="#c9863f" stroke-width="6" stroke-linecap="round"/>
+          <g stroke="#8b96a3" stroke-width="3">
+            <line x1="95" y1="92" x2="95" y2="204"/><line x1="122" y1="92" x2="122" y2="204"/><line x1="149" y1="92" x2="149" y2="204"/>
+            <line x1="176" y1="92" x2="176" y2="204"/><line x1="203" y1="92" x2="203" y2="204"/>
+          </g>
+          <polygon points="240,98 290,108 290,200 240,202" fill="rgba(255,255,255,.6)" stroke="#6b7480" stroke-width="4"/>
+          <rect x="296" y="190" width="40" height="9" rx="4.5" fill="#e2703a"/><circle cx="296" cy="194.5" r="7" fill="#c35a28"/><circle cx="336" cy="194.5" r="7" fill="#c35a28"/>
+          <text x="214" y="78" font-family="system-ui" font-size="18" font-weight="800" fill="#2f8f6a">Zzz</text>
+          <text x="180" y="244" text-anchor="middle" font-family="system-ui" font-size="14" font-weight="700" fill="#2f8f6a">Rutina + calma = cachorro feliz</text>
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <!-- PROBLEMA -->
+  <section class="pain">
+    <div class="wrap">
+      <h2>¿Te suena alguna de estas?</h2>
+      <ul class="checks">
+        <li>Hace pipí dentro de la casa, aunque lo acabas de sacar.</li>
+        <li>Te muerde las manos, los pies y la ropa, y cada día más fuerte.</li>
+        <li>Llora de noche y nadie en la casa duerme.</li>
+        <li>Se pone como loco al final del día y no hay forma de calmarlo.</li>
+        <li>Llora o rompe cosas apenas sales de la pieza.</li>
+      </ul>
+      <div class="callout">
+        <strong>Lo que casi nadie explica:</strong> la mayoría de los accidentes ocurren en momentos predecibles, y muchas "crisis" de mordidas son simplemente sueño: un cachorro necesita dormir entre 16 y 20 horas al día. Con la rutina correcta, buena parte de los problemas desaparece antes de tener que "corregir" nada.
+      </div>
+    </div>
+  </section>
+
+  <!-- MÉTODO -->
+  <section>
+    <div class="wrap">
+      <h2>Cómo funciona: un tema por semana</h2>
+      <p>Sesiones cortas de 3 a 5 minutos, varias veces al día. Cada día tiene un objetivo claro.</p>
+      <div class="phases four">
+        <div class="phase">
+          <div class="tag">Semana 1</div>
+          <h3>Rutina, pipí y la primera noche</h3>
+          <p>Horarios claros, el lugar del pipí, accidentes sin drama y una jaula que tu cachorro siente como su cama favorita.</p>
+        </div>
+        <div class="phase">
+          <div class="tag">Semana 2</div>
+          <h3>Mordidas y juego</h3>
+          <p>Aprende a morder suave y a cambiar tus manos por sus juguetes. Qué hacer en la "hora loca" del final del día.</p>
+        </div>
+        <div class="phase">
+          <div class="tag">Semana 3</div>
+          <h3>El mundo y el contacto</h3>
+          <p>Que acepte que le toquen las patas, orejas y cola, y que conozca ruidos, personas y lugares de forma segura.</p>
+        </div>
+        <div class="phase">
+          <div class="tag">Semana 4</div>
+          <h3>Quedarse solo y autocontrol</h3>
+          <p>Que pueda quedarse solo de a poco sin llorar, y que aprenda a esperar antes de comer o salir.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUÉ INCLUYE -->
+  <section style="padding-top:0">
+    <div class="wrap">
+      <h2>Qué incluye</h2>
+      <div class="includes">
+        <div class="inc"><div class="ico">📘</div><div><h3>Guía de 4 semanas (PDF)</h3><p>Los 28 días explicados en lenguaje simple: qué hacer, qué evitar y qué hacer si algo no funciona.</p></div></div>
+        <div class="inc"><div class="ico">🎬</div><div><h3>8 videos animados</h3><p>Los momentos clave, paso a paso: salir a tiempo, la jaula, la primera noche, mordidas, quedarse solo.</p></div></div>
+        <div class="inc"><div class="ico">✅</div><div><h3>Calendario y registro de pipí</h3><p>Para marcar cada día y anotar a qué hora hace pipí. En pocos días verás su patrón.</p></div></div>
+        <div class="inc"><div class="ico">🏠</div><div><h3>Guía de llegada</h3><p>Qué comprar, cómo preparar la casa, qué preguntarle al veterinario y los acuerdos con tu familia.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARA QUIÉN -->
+  <section style="padding-top:0">
+    <div class="wrap">
+      <h2>¿Es para ti?</h2>
+      <div class="two">
+        <div class="box">
+          <h3>✔ Sí, si…</h3>
+          <ul>
+            <li>Acabas de adoptar un cachorro o estás por recibirlo.</li>
+            <li>Tu cachorro hace pipí en la casa, muerde o llora de noche.</li>
+            <li>Puedes dedicarle 10 a 15 minutos al día durante 4 semanas.</li>
+            <li>Prefieres un método amable, sin castigos.</li>
+          </ul>
+        </div>
+        <div class="box no">
+          <h3>✖ No es para ti si…</h3>
+          <ul>
+            <li>Tu perro muerde con el cuerpo rígido, gruñidos intensos o mirada fija (no en juego). En ese caso, busca un profesional presencial.</li>
+            <li>Tu cachorro tiene diarrea, vómitos o cambios bruscos en el pipí: primero, el veterinario.</li>
+            <li>Buscas un truco que lo resuelva todo en un día.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFERTA -->
+  <section class="offer" id="comprar">
+    <div class="wrap">
+      <div class="offer-card">
+        <span class="eyebrow">Precio de lanzamiento</span>
+        <h2 style="margin-bottom:4px">Empieza hoy tu plan de 4 semanas</h2>
+        <div class="price"><span class="now">USD 9</span></div>
+        <p>Pago único, sin suscripción. Incluye la guía de 4 semanas en PDF, 8 videos animados, el calendario con registro de pipí y la guía de llegada.</p>
+        <a href="https://pay.hotmart.com/R108618938V" class="btn buy" style="width:100%;text-align:center;margin-top:18px">Quiero Cachorro Tranquilo por USD 9</a>
+        <p class="small" style="text-align:center;margin-top:12px">El pago se procesa en Hotmart (tarjeta y medios de pago locales). El acceso llega a tu correo de inmediato, en el área de miembros Escuela Patitas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="wrap" style="max-width:760px">
+      <h2>Preguntas frecuentes</h2>
+      <details><summary>¿Desde qué edad sirve?</summary><p>Desde que el cachorro llega a tu casa, normalmente entre las 8 y 12 semanas, hasta los 6 meses aproximadamente. Si tu perro es mayor, las rutinas de pipí y de quedarse solo también le sirven.</p></details>
+      <details><summary>¿Y si todavía no tiene todas sus vacunas?</summary><p>El plan está pensado para eso: mientras tu veterinario no lo autorice, todo se practica en casa, en brazos o en lugares limpios sin perros desconocidos.</p></details>
+      <details><summary>¿Tengo que usar jaula?</summary><p>Ayuda mucho para el pipí y la noche, pero también sirve un corral o una pieza pequeña y segura. La guía explica cómo hacer que la sienta como su cama, nunca como un castigo.</p></details>
+      <details><summary>¿Vivo en departamento, sirve igual?</summary><p>Sí. La guía explica cómo usar un empapador en un lugar fijo y cómo pasar al exterior cuando tu veterinario lo autorice.</p></details>
+      <details><summary>¿Cómo recibo el acceso?</summary><p>Después de pagar, Hotmart te envía un correo con el acceso al área de miembros Escuela Patitas. Ahí están los videos y los PDF para descargar.</p></details>
+      <details><summary>¿Esto reemplaza al veterinario o a un educador canino?</summary><p>No. Es información educativa para la crianza diaria. Ante problemas de salud, miedo intenso o mordidas que no son de juego, consulta a un profesional.</p></details>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <a href="https://pay.hotmart.com/R108618938V" class="btn buy" style="margin-bottom:22px">Empezar hoy por USD 9</a>
+      <p>© Cachorro Tranquilo · Escuela Patitas. Información educativa: no reemplaza la atención veterinaria ni la de un profesional del comportamiento.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
